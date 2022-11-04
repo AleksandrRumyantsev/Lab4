@@ -8,6 +8,7 @@ public class Binary implements ArrayOfBool{
     int size = sizeBitFollow/32;
     int [] ints = new int[size];
 
+    @Override
     public boolean getByIndex (int index){ //true если 1, false если 0
         int indexElement = index/32;
         int element = ints[indexElement];
@@ -15,6 +16,7 @@ public class Binary implements ArrayOfBool{
         int mask = 1<<indexBit;
         return (element&mask)==mask;
     }
+    @Override
     public String toString(){
         String str="";
         for(int i =0; i<sizeBitFollow; i++){
@@ -22,7 +24,7 @@ public class Binary implements ArrayOfBool{
         }
         return str;
     }
-
+    @Override
     public void inversionBit (int index){
         int indexElement = index/32;
         int indexBit = index%32;

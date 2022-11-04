@@ -17,7 +17,6 @@ public class MainClass {
         System.out.println(booleanArray.countTrue());
         booleanArray.setValue(5,false);
         System.out.println(booleanArray.toString());
-
         //Реализация класса BooleanArray (массив булевых значений)
         System.out.println("Реализация класса BooleanArray (массив булевых значений)");
         BooleanArray booleanArray1 = new BooleanArray();
